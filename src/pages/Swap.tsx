@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ChangeEvent } from "react";
+import React, { useState/*, useEffect*/, ChangeEvent } from "react";
 import { Input, Popover, Radio, Modal, message } from "antd";
 import {
   ArrowDownOutlined,
@@ -6,7 +6,7 @@ import {
   SettingOutlined,
 } from "@ant-design/icons";
 import tokenList from "../data/tokenList.json";
-import axios from "axios";
+// import axios from "axios";
 // import { useSendTransaction, useWaitForTransaction } from "wagmi";
 
 // Define types for tokens and transaction details
@@ -18,11 +18,11 @@ interface Token {
   ticker: string;
 }
 
-interface TxDetails {
+/*interface TxDetails {
   to: string | null;
   data: string | null;
   value: string | null;
-}
+}*/
 
 // interface Props {
 //   address: string;
@@ -31,7 +31,7 @@ interface TxDetails {
 
 const Swap: React.FC = () => {
   // const { address, isConnected } = props;
-  const [messageApi, contextHolder] = message.useMessage();
+  const [/*messageApi,*/ contextHolder] = message.useMessage();
   const [slippage, setSlippage] = useState<number>(2.5);
   const [tokenOneAmount, setTokenOneAmount] = useState<string | null>(null);
   const [tokenTwoAmount, setTokenTwoAmount] = useState<string | null>(null);
@@ -40,11 +40,11 @@ const Swap: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [changeToken, setChangeToken] = useState<number>(1);
   const [prices, setPrices] = useState<{ ratio: number } | null>(null);
-  const [txDetails, setTxDetails] = useState<TxDetails>({
+  /*const [txDetails, setTxDetails] = useState<TxDetails>({
     to: null,
     data: null,
     value: null,
-  });
+  });*/
 
   // const { data, sendTransaction } = useSendTransaction({
   //   request: {
