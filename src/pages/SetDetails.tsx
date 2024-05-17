@@ -84,7 +84,7 @@ function SetDetails(props: SetDetailsProps) {
     }
   }, [data]);
 
-  const { data: tokenDecimalsData, isLoading: tokenDecimalsLoading, isError: tokenDecimalsError } = useReadContracts({
+  const { data: tokenDecimalsData} = useReadContracts({
     contracts: stateComponentDecimals,
   });
 

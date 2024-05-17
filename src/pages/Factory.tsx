@@ -3,7 +3,7 @@ import { Modal } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import tokenList from "../data/tokenList.json";
 import { useWriteContract } from "wagmi";
-import { Controller, Erc20, SetToken, SetTokenCreator } from "../abis";
+import { SetTokenCreator } from "../abis";
 import { parseUnits } from 'viem';
 
 interface Token {
