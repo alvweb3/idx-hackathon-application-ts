@@ -17,7 +17,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "viem": "latest",
-    "wagmi": "latest"
+    "wagmi": "latest",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.1.2",
