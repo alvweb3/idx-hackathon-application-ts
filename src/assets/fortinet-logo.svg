@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="137.01685mm"
+   height="97.763069mm"
+   viewBox="0 0 137.01684 97.763071"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Fortinet 2009 (Icon).svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.2810466"
+     inkscape:cx="232.23199"
+     inkscape:cy="224.81618"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1229" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-35.8632,-57.636468)">
+    <g
+       transform="matrix(0.03527778,0,0,-0.03527778,-24.789298,138.08529)"
+       id="g12">
+      <g
+         id="g1229"
+         transform="matrix(49.230766,0,0,-49.230766,10.574058,850.81863)">
+        <path
+           d="m 104.99081,27.242076 c 4.37148,-1.485036 7.77364,-6.519209 8.59091,-12.848353 V 12.564351 H 91.16996 v 14.67931 h 13.81768 z m 8.59408,-41.59243 v -1.655142 c -0.85909,-6.60474 -4.51403,-11.809335 -9.17378,-13.032083 H 91.173129 v 14.685641 H 113.58489 Z M 34.708159,12.565935 v 1.813531 c 0.811573,6.335482 4.213093,11.378525 8.597246,12.864195 H 57.053396 V 12.564351 H 34.708159 Z m 9.170608,-41.59243 c -4.653413,1.223382 -8.318489,6.430513 -9.170608,13.044756 v 1.643424 H 57.053396 V -29.023959 H 43.878767 Z M 113.60073,-8.2271124 H 91.188967 V 6.4585323 H 113.60073 Z M 63.170303,27.25158 H 85.094234 V 12.57227 H 63.170303 Z M 85.094234,-29.039164 H 63.170303 v 14.685645 H 85.094234 Z M 34.727163,6.4395248 H 57.072404 V -8.2461164 H 34.727163 Z"
+           style="fill:#ee2e24;stroke-width:3.16774"
+           id="path1218" />
+      </g>
+    </g>
+  </g>
+</svg>

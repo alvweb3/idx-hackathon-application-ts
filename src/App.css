@@ -1,0 +1,577 @@
+.App {
+  text-align: center;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.logo{
+  width: 150px;
+  height: 40px;
+  padding-right: 20px;
+}
+
+.canto{
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+
+}
+
+.leftH {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rightH {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.headerItem {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.headerItem:hover {
+  background-color: rgb(34, 42, 58);
+  cursor: pointer;
+}
+
+.connectButton {
+  background-color: #243056; 
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 100px;
+  color: #5981F3;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.connectButton:hover {
+  cursor: pointer;
+  color: #3b4874
+}
+
+.mainWindow {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.tradeBox {
+  width: 400px;
+  background-color: #0E111B;
+  border: 2px solid #21273a;
+  min-height: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.tradeBoxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+}
+
+.cog {
+  color: #51586f;
+  transition: 0.3s;
+}
+
+.cog:hover {
+  color: white;
+  rotate: 90deg;
+  cursor: pointer;
+}
+
+.switchButton {
+  background-color: #3a4157;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 8px;
+  position: absolute;
+  top: 86px;
+  left: 180px;
+  color: #5F6783;
+  border: 3px solid #0E111B;
+  font-size: 12px;
+  transition: 0.3s
+}
+
+.dollarAmount {
+  position: absolute;
+  top: 75px;
+  left: 14px;
+  font-size: 10px;
+  color: #5F6783;
+}
+
+.switchButton:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.inputs {
+  position: relative;
+}
+
+.assetOne {
+  position: absolute;
+  min-width: 50px;
+  height: 30px;
+  background-color: #3a4157;
+  top: 36px;
+  right: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 8px;
+}
+
+.assetTwo {
+  position: absolute;
+  min-width: 50px;
+  height: 30px;
+  background-color: #3a4157;
+  top: 135px;
+  right: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 8px;
+}
+
+.assetOne:hover{
+  cursor: pointer;
+}
+
+.assetTwo:hover{
+  cursor: pointer;
+}
+
+.assetLogo {
+  height: 22px;
+  margin-left: 5px;
+}
+
+.swapButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #243056; 
+  width: calc(100%);
+  height: 55px;
+  font-size: 20px;
+  border-radius: 12px;
+  color: #5981F3;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  margin-top: 8px;
+}
+
+.swapButton[disabled] {
+  background-color: #243056;
+  opacity: 0.4;
+  color: #5982f39b;
+}
+
+.swapButton[disabled]:hover {
+  cursor: not-allowed;
+  background-color: #243056;
+}
+
+.swapButton:hover {
+  cursor: pointer;
+  background-color: #3b4874
+}
+
+.tokenLogo {
+  height: 40px;
+  width: 40px;
+}
+
+.modalContent {
+  border-top: 1px solid #363e54;
+  height: 320px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  /* padding-top: 20px; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.tokenChoice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tokenChoice:hover {
+  cursor: pointer;
+  background-color: #1f2639;
+}
+
+.tokenName {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tokenTicker {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #51596f;
+}
+
+.verticalStack {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+  justify-content: center; /* Center horizontally */
+}
+
+.issueButton, .redeemButton {
+  background-color: #243056; /* You can change this color as needed */
+  color: #76A9FA; /* Lighter blue for text, change as needed */
+  padding: 10px 20px; /* Uniform padding */
+  border-radius: 100px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin: 20px; /* Adds space between the buttons */
+  font-size: 20px;
+}
+
+.issueButton:hover, .redeemButton:hover {
+  cursor: pointer;
+  background-color: #3b4874; /* Darker on hover */
+  color: #5981F3; /* Original blue color on hover */
+}
+
+/* Optional: Adjust the flex-direction for the container of issue and redeem buttons only */
+.buttonContainer {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed for your design */
+}
+
+.propertyCard {
+  background-color: #0E111B;
+  border: 2px solid #21273a;
+  border-radius: 8px;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: left;
+  width: 500px;
+  text-align: center;
+}
+
+.propertyCard:hover {
+  background-color: #262f4b;
+  border: 2px solid #21273a;
+  border-radius: 8px;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: left;
+  width: 500px;
+  text-align: center;
+}
+
+.propertyRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.propertyLabel {
+  font-weight: bold;
+  color: #a0aec0;
+}
+
+.propertyValue {
+  color: #f7fafc;
+}
+
+.waitButton {
+  background-color: #243056; 
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 100px;
+  color: #5981F3;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.waitButton:hover {
+  cursor: pointer;
+  color: #3b4874
+}
+
+.createBox {
+  width: 400px;
+  background-color: #0E111B;
+  border: 2px solid #21273a;
+  min-height: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative; /* Ensure that child elements can be positioned relative to this container */
+}
+
+/* Styling for the input inside the createBox */
+.createBox input {
+  width: 90%; /* Adjust width as needed */
+  padding: 8px 10px;
+  margin-top: 10px; /* Add some space on top */
+  border-radius: 8px;
+  border: none;
+  background-color: #243056;
+  color: white;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.createBox input:focus {
+  outline: none; /* Removes the outline to keep the design clean */
+  border: 1px solid #5981F3; /* Adds a subtle highlight */
+}
+
+.selectedtoken {
+    margin-top: 20px;
+    min-width: 50px;
+    height: 30px;
+    background-color: #3a4157;
+    top: 36px;
+    right: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    padding-right: 8px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  color: #aaa;
+}
+
+.selectedTokenIndex {
+  margin-top: 20px;
+  max-width: 100px;
+  height: 30px;
+  background-color: #3a4157;
+  top: 36px;
+  right: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 8px;
+}
+
+.selectedTokenIndex:hover {
+  cursor: pointer;
+}
+
+.modalContentIndex {
+  max-width: 500px; /* Set a maximum width to restrict expansion */
+  height: 320px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border-top: 1px solid #363e54;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selectedTokensDisplay {
+  display: flex;
+  flex-direction: column; /* This stacks children vertically */
+  align-items: center; /* Center-align the token entries */
+  gap: 10px; /* Keep some space between entries */
+  margin-top: 10px;
+}
+
+.selectedToken2 {
+  background-color: #3a4157;
+  border-radius: 8px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tokenLogoSmall {
+  height: 20px;
+  width: 20px;
+}
+
+.removeTokenButton {
+  background-color: #ff4d4f;
+  border: none;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.removeTokenButton:hover {
+  background-color: #ff7875;
+}
+
+.indexNameInput, .indexSymbolInput {
+  margin-top: 20px;
+}
+
+.indexNameInput input, .indexSymbolInput input {
+  width: 300px;
+  padding: 8px;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+}
+
+.indexNameInput h2, .indexSymbolInput h2 {
+  color: #aaa;
+}
+
+
+.tokenContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensures the container takes full width */
+}
+
+.createIndex {
+  background-color: #243056; /* You can change this color as needed */
+  color: #76A9FA; /* Lighter blue for text, change as needed */
+  padding: 10px 20px; /* Uniform padding */
+  border-radius: 100px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin: 25px;
+  font-size: 20px;
+}
+
+.createIndex:hover {
+  cursor: pointer;
+  background-color: #3b4874; /* Darker on hover */
+  color: #5981F3; /* Original blue color on hover */
+}
+
+.tokenLogoSmall + .tokenTicker {
+  margin-left: 0px;
+  color:white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.propertyCard {
+  background-color: #0E111B;
+  border: 2px solid #21273a;
+  border-radius: 8px;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: left;
+  width: 500px;
+  text-align: center;
+}
+
+.propertyCard:hover {
+  background-color: #262f4b;
+}
+
+.propertyCardIndex {
+  background-color: #262f4b;
+  border: 2px solid #21273a;
+  border-radius: 8px;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: left;
+  width: 500px;
+  text-align: center;
+}
+
+.propertyRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.propertyLabel {
+  font-weight: bold;
+  color: #a0aec0;
+}
+
+.propertyValue {
+  color: #f7fafc;
+}
