@@ -24,7 +24,7 @@ interface FactoryProps {
 }
 
 const Factory: React.FC<FactoryProps> = ({ status }) => {
-  const [tokenOne, setTokenOne] = useState<Token>(tokenList[0]);
+  const [tokenOne/*, setTokenOne*/] = useState<Token>(tokenList[0]);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedTokens, setSelectedTokens] = useState<SelectedToken[]>([]);
   const [indexName, setIndexName] = useState("");
