@@ -1,7 +1,7 @@
 # IDX V0 Front End Using Typescript
 This is the source code of the IDX application using Typescript. It includes the front end and the smart contract integration.
 
-You can check the live website at:
+You can check the live website at: https://idx-hackathon-application-ts.vercel.app/
 
 # These are the steps to interact with:
 
