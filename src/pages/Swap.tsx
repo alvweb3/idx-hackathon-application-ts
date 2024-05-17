@@ -1,5 +1,5 @@
 import React, { useState/*, useEffect*/, ChangeEvent } from "react";
-import { Input, Popover, Radio, Modal, message } from "antd";
+import { Input, Popover, Radio, Modal, /*message*/ } from "antd";
 import {
   ArrowDownOutlined,
   DownOutlined,
@@ -31,7 +31,7 @@ interface Token {
 
 const Swap: React.FC = () => {
   // const { address, isConnected } = props;
-  const [/*messageApi,*/ contextHolder] = message.useMessage();
+  // const [messageApi, contextHolder] = message.useMessage();
   const [slippage, setSlippage] = useState<number>(2.5);
   const [tokenOneAmount, setTokenOneAmount] = useState<string | null>(null);
   const [tokenTwoAmount, setTokenTwoAmount] = useState<string | null>(null);
@@ -189,7 +189,7 @@ const Swap: React.FC = () => {
 
   return (
     <>
-      {contextHolder}
+      {/* {contextHolder} */}
       <Modal
         open={isOpen}
         footer={null}
